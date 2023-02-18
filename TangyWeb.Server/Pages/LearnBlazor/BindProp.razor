@@ -3,7 +3,11 @@
 <h1>BindProp</h1>
 
 Name : @product.Name <br/>
-Name : @product.Name <br/>
+Active : @product.IsActive <br/>
+This Product is: @(product.IsActive ? "Active" : "Not Active" )<br/><br/>
+
+Active : <input type="checkbox" @bind-value="@product.IsActive" checked="@(product.IsActive ? "checked" : null)"/> <br/>
+Price : <input type="number" @bind="@product.Price" @bind:event="oninput" />
 
 @code {
 
@@ -11,7 +15,8 @@ Name : @product.Name <br/>
     {
         Id = 1,
         Name = "Rose",
-        IsActive = true
+        IsActive = true,
+        Price = 99.99
     };
 
 }
