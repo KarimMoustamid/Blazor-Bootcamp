@@ -34,11 +34,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\karim.moustamid\\OneDrive - AgileThought\\Desktop\\.Net Core\\Blazor Store\\Tangy\\TangyWeb.Server\\TangyWeb.Server.csproj",
+      "projectUniqueName": "C:\\Users\\karim.moustamid\\OneDrive - AgileThought\\Desktop\\.Net Core\\Blazor Store\\TangyWeb.Server\\TangyWeb.Server.csproj",
       "projectName": "TangyWeb.Server",
-      "projectPath": "C:\\Users\\karim.moustamid\\OneDrive - AgileThought\\Desktop\\.Net Core\\Blazor Store\\Tangy\\TangyWeb.Server\\TangyWeb.Server.csproj",
+      "projectPath": "C:\\Users\\karim.moustamid\\OneDrive - AgileThought\\Desktop\\.Net Core\\Blazor Store\\TangyWeb.Server\\TangyWeb.Server.csproj",
       "packagesPath": "C:\\Users\\karim.moustamid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\karim.moustamid\\OneDrive - AgileThought\\Desktop\\.Net Core\\Blazor Store\\Tangy\\TangyWeb.Server\\obj\\",
+      "outputPath": "C:\\Users\\karim.moustamid\\OneDrive - AgileThought\\Desktop\\.Net Core\\Blazor Store\\TangyWeb.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -60,8 +60,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\karim.moustamid\\OneDrive - AgileThought\\Desktop\\.Net Core\\Blazor Store\\Tangy\\TangyLibrary.Models\\TangyLibrary.Models.csproj": {
-              "projectPath": "C:\\Users\\karim.moustamid\\OneDrive - AgileThought\\Desktop\\.Net Core\\Blazor Store\\Tangy\\TangyLibrary.Models\\TangyLibrary.Models.csproj"
+            "C:\\Users\\karim.moustamid\\OneDrive - AgileThought\\Desktop\\.Net Core\\Blazor Store\\TangyLibrary.Models\\TangyLibrary.Models.csproj": {
+              "projectPath": "C:\\Users\\karim.moustamid\\OneDrive - AgileThought\\Desktop\\.Net Core\\Blazor Store\\TangyLibrary.Models\\TangyLibrary.Models.csproj"
             }
           }
         }

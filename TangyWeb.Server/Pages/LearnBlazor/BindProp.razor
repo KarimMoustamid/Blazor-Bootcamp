@@ -1,27 +1,43 @@
 ﻿@page "/BindProp"
 @using TangyLibrary.Models.LearnBlazorModels
-<h1>BindProp</h1>
 
-Name : @product.Name <br/>
-Active : @product.IsActive <br/>
-This Product is: @(product.IsActive ? "Active" : "Not Active")<br/><br/>
+<h1 class="text-4xl font-medium text-green-700  py-2">BindProp</h1>
 
-Active : <input type="checkbox" @bind-value="@product.IsActive" checked="@(product.IsActive ? "checked" : null)"/> <br/>
-Price : <input type="number" @bind="@product.Price" @bind:event="oninput"/>  <br/>   <br/>
+<div class="grid grid-cols-2 gap-x-8">
+    <div class="container border-2 border-solid border-gray-300 py-2">
+        <h2 class="text-blue-600 font-medium py-2">Product Playground</h2>
+        <hr/>
+        
+        Active : <input type="checkbox" @bind-value="@product.IsActive" checked="@(product.IsActive ? "checked" : null)"/> <br/>
+        Price : <input type="number" @bind="@product.Price" @bind:event="oninput"/><br/>
 
 
-Product Properties : 
-<select @bind="selectProp">
-   @foreach ( var prop in product.ProductProperties)
-   {
-       <option value="@prop.Key">@prop.Value</option> 
-   }
-</select> <br/>
-Property Selected : @selectProp  , 
-@if (!String.IsNullOrEmpty(selectProp))
-{
-    <p>Property Value : @product.ProductProperties.FirstOrDefault(u => u.Key == selectProp).Value</p>
-}
+        Product Properties :
+        <select @bind="selectProp">
+            @foreach (var prop in product.ProductProperties)
+            {
+                <option value="@prop.Key">@prop.Value</option>
+            }
+        </select> <br/>
+        
+        
+    </div>
+    <div class="container border-2 border-solid border-gray-300 py-2">
+        <h2 class="text-blue-600 font-medium py-2">Product Sammary</h2>
+        <hr/>
+        
+        Name : @product.Name <br/>
+        Active : @product.IsActive <br/>
+        
+        This Product is: @(product.IsActive ? "Active" : "Not Active")<br/>
+        Property Selected : @selectProp ,
+        @if (!String.IsNullOrEmpty(selectProp))
+        {
+            <p>Property Value : @product.ProductProperties.FirstOrDefault(u => u.Key == selectProp).Value</p>
+        }
+
+    </div>
+</div>
 
 @code {
 
