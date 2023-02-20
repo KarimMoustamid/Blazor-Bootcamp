@@ -1,0 +1,12 @@
+C:\Users\karim.moustamid\OneDrive - AgileThought\Desktop\.Net Core\Blazor Store\TangyLibrary.Models\bin\Debug\net7.0\TangyLibrary.Models.deps.json
+C:\Users\karim.moustamid\OneDrive - AgileThought\Desktop\.Net Core\Blazor Store\TangyLibrary.Models\bin\Debug\net7.0\TangyLibrary.Models.dll
+C:\Users\karim.moustamid\OneDrive - AgileThought\Desktop\.Net Core\Blazor Store\TangyLibrary.Models\bin\Debug\net7.0\TangyLibrary.Models.pdb
+C:\Users\karim.moustamid\OneDrive - AgileThought\Desktop\.Net Core\Blazor Store\TangyLibrary.Models\obj\Debug\net7.0\TangyLibrary.Models.csproj.AssemblyReference.cache
+C:\Users\karim.moustamid\OneDrive - AgileThought\Desktop\.Net Core\Blazor Store\TangyLibrary.Models\obj\Debug\net7.0\TangyLibrary.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\karim.moustamid\OneDrive - AgileThought\Desktop\.Net Core\Blazor Store\TangyLibrary.Models\obj\Debug\net7.0\TangyLibrary.Models.AssemblyInfoInputs.cache
+C:\Users\karim.moustamid\OneDrive - AgileThought\Desktop\.Net Core\Blazor Store\TangyLibrary.Models\obj\Debug\net7.0\TangyLibrary.Models.AssemblyInfo.cs
+C:\Users\karim.moustamid\OneDrive - AgileThought\Desktop\.Net Core\Blazor Store\TangyLibrary.Models\obj\Debug\net7.0\TangyLibrary.Models.csproj.CoreCompileInputs.cache
+C:\Users\karim.moustamid\OneDrive - AgileThought\Desktop\.Net Core\Blazor Store\TangyLibrary.Models\obj\Debug\net7.0\TangyLibrary.Models.dll
+C:\Users\karim.moustamid\OneDrive - AgileThought\Desktop\.Net Core\Blazor Store\TangyLibrary.Models\obj\Debug\net7.0\refint\TangyLibrary.Models.dll
+C:\Users\karim.moustamid\OneDrive - AgileThought\Desktop\.Net Core\Blazor Store\TangyLibrary.Models\obj\Debug\net7.0\TangyLibrary.Models.pdb
+C:\Users\karim.moustamid\OneDrive - AgileThought\Desktop\.Net Core\Blazor Store\TangyLibrary.Models\obj\Debug\net7.0\ref\TangyLibrary.Models.dll

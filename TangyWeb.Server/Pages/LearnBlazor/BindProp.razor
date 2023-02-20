@@ -1,13 +1,13 @@
 ﻿@page "/BindProp"
 @using TangyLibrary.Models.LearnBlazorModels
 
-<h1 class="text-4xl font-medium text-green-700  py-2">BindProp</h1>
+<h1 class="text-4xl font-medium text-green-700  py-2">Individual Product</h1>
 
 <div class="grid grid-cols-2 gap-x-8">
     <div class="container border-2 border-solid border-gray-300 py-2">
         <h2 class="text-blue-600 font-medium py-2">Product Playground</h2>
         <hr/>
-        
+
         Active : <input type="checkbox" @bind-value="@product.IsActive" checked="@(product.IsActive ? "checked" : null)"/> <br/>
         Price : <input type="number" @bind="@product.Price" @bind:event="oninput"/><br/>
 
@@ -19,16 +19,16 @@
                 <option value="@prop.Key">@prop.Value</option>
             }
         </select> <br/>
-        
-        
+
+
     </div>
     <div class="container border-2 border-solid border-gray-300 py-2">
         <h2 class="text-blue-600 font-medium py-2">Product Sammary</h2>
         <hr/>
-        
+
         Name : @product.Name <br/>
         Active : @product.IsActive <br/>
-        
+
         This Product is: @(product.IsActive ? "Active" : "Not Active")<br/>
         Property Selected : @selectProp ,
         @if (!String.IsNullOrEmpty(selectProp))
@@ -36,6 +36,32 @@
             <p>Property Value : @product.ProductProperties.FirstOrDefault(u => u.Key == selectProp).Value</p>
         }
 
+    </div>
+</div>
+
+<h1 class="text-4xl font-medium text-green-700  py-2 mt-8">Product Table</h1>
+
+<div class="">
+    <div class="">
+        @foreach (var product in Products)
+        {
+            <div class="flex justify-between items-center h-full w-full">
+                <input class="h-full w-full" type="text" @bind="@product.Name" @bind:event="oninput"/>
+                <input class="h-full w-full" type="number" @bind="@product.Price" @bind:event="oninput"/>
+                <input type="checkbox" @bind-value="@product.IsActive" checked="@(product.IsActive ? "checked" : null)"/>
+            </div>
+        }
+    </div>
+
+    <h1 class="text-4xl font-medium text-green-700  py-2 mt-8">Product Sammary</h1>
+
+    <div class="mt-8">
+        @foreach (var product in Products)
+        {
+            <div class="">
+                @product.Name [@product.Price] is @product.IsActive
+            </div>
+        }
     </div>
 </div>
 
@@ -65,5 +91,38 @@
             },
         }
     };
+
+    List<Demo_Product> Products = new();
+
+    protected override void OnInitialized()
+    {
+        Products.Add(new()
+        {
+            Id = 1,
+            Name = "Midnight Blaze",
+            IsActive = false,
+            Price = 10.99,
+            ProductProperties = new()
+            {
+                new Demo_ProductProp {Id = 1, Key = "Flavor", Value = "Rose"},
+                new Demo_ProductProp {Id = 2, Key = "Size", Value = "20oz"},
+                new Demo_ProductProp {Id = 3, Key = "Color", Value = "Purple"}
+            }
+        });
+
+        Products.Add(new()
+        {
+            Id = 2,
+            Name = "Blossom Lily",
+            IsActive = true,
+            Price = 13.99,
+            ProductProperties = new()
+            {
+                new Demo_ProductProp {Id = 1, Key = "Flavor", Value = "Lily"},
+                new Demo_ProductProp {Id = 2, Key = "Size", Value = "18oz"},
+                new Demo_ProductProp {Id = 3, Key = "Color", Value = "White"}
+            }
+        });
+    }
 
 }
