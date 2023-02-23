@@ -20,10 +20,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/karim.moustamid/OneDrive - AgileThought/Desktop/.Net Core/Blazor Store/TangyWeb.Server/Pages/components/DemoProduct.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY29tcG9uZW50c1xEZW1vUHJvZHVjdC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/karim.moustamid/OneDrive - AgileThought/Desktop/.Net Core/Blazor Store/TangyWeb.Server/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,6 +30,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/karim.moustamid/OneDrive - AgileThought/Desktop/.Net Core/Blazor Store/TangyWeb.Server/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/karim.moustamid/OneDrive - AgileThought/Desktop/.Net Core/Blazor Store/TangyWeb.Server/Pages/LearnBlazorcomponents/DemoProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhcm5CbGF6b3Jjb21wb25lbnRzXERlbW9Qcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/karim.moustamid/OneDrive - AgileThought/Desktop/.Net Core/Blazor Store/TangyWeb.Server/Pages/LearnBlazorcomponents/_EditDeleteBtn.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhcm5CbGF6b3Jjb21wb25lbnRzXF9FZGl0RGVsZXRlQnRuLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/karim.moustamid/OneDrive - AgileThought/Desktop/.Net Core/Blazor Store/TangyWeb.Server/Pages/LearnBlazor/BindProp.razor]
