@@ -1,0 +1,32 @@
+﻿<div class="bg-blue-200 border-1 border-gray-600 border-solid rounded p-3 my-3">
+    <div>
+        <p class="text-lg">Child Tile : @Title </p>
+    </div>
+
+    <div>
+        @if (ChildContent != null)
+        {
+            <div>
+                <p class="text-lg text-blue-600">@ChildContent</p>
+            </div>
+        }
+        else
+        {
+            <div>
+                <p class="text-lg text-blue-600">No Child Content</p>
+            </div>
+        }
+        
+        
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+}

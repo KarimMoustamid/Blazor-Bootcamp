@@ -1,5 +1,6 @@
 ﻿@page "/DemoProduct"
 @using TangyLibrary.Models.LearnBlazorModels
+
 <h3 class="text-4xl text-blue-600">DemoProduct</h3>
 <p class="text-lg text-green-700">Favourites Total : @SelectedFavouriteCount</p>
 <p class="text-lg text-red-700">Last Selected Product : @LastSelectedProduct</p>
@@ -11,7 +12,8 @@
             Product="@product" 
             onFavouriteUpdated="FavouriteCountUpdate"
             onLastSelectedProductUpdated="LastSelectedProductUpdate"
-            ></_IndividualProduct>
+        ></_IndividualProduct>
+        
     }
 
 </div>
