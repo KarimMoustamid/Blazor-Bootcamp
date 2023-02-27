@@ -1,17 +1,19 @@
 ﻿@page "/DemoProduct"
 @using TangyLibrary.Models.LearnBlazorModels
 <h3 class="text-4xl text-blue-600">DemoProduct</h3>
+<p class="text-lg text-green-700">Favourites Total : @SelectedFavouriteCount</p>
 
 <div class="container grid grid-cols-2 gap-x-2 bg-blue-200 p-3">
     @foreach (var product in Products)
     {
-        <_IndividualProduct Product="@product"></_IndividualProduct>
+        <_IndividualProduct Product="@product" onFavouriteUpdated="FavouriteCountUpdate" ></_IndividualProduct>
     }
 
 </div>
 
 @code {
-    
+
+    public int SelectedFavouriteCount { get; set; } = 0;
 
     List<Demo_Product> Products = new();
 
@@ -44,6 +46,18 @@
                 new Demo_ProductProp {Id = 3, Key = "Color", Value = "White"}
             }
         });
+    }
+
+    protected void FavouriteCountUpdate(bool isSelected)
+    {
+        if (isSelected)
+        {
+            SelectedFavouriteCount++;
+        }
+        else
+        {
+            SelectedFavouriteCount--;
+        }
     }
 
 }
