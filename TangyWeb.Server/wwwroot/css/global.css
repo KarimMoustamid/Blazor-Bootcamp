@@ -279,6 +279,45 @@ px-4 {
     color: var(--color-green-900);
 }
 
+.text-red-100 {
+    color: var(--color-red-100);
+}
+
+.text-red-200 {
+    color: var(--color-red-200);
+}
+
+.text-red-300 {
+    color: var(--color-red-300);
+}
+
+.text-red-400 {
+    color: var(--color-red-400);
+}
+
+
+.text-red-500 {
+    color: var(--color-red-500);
+}
+
+.text-red-600 {
+    color: var(--color-red-600);
+}
+
+.text-red-700 {
+    color: var(--color-red-700);
+}
+
+.text-red-800 {
+    color: var(--color-red-800);
+}
+
+.text-red-900 {
+    color: var(--color-red-900);
+}
+
+
+
 
 /* ******************** background **************** */
 

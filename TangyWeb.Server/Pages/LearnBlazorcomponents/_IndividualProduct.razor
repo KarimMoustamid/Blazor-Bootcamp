@@ -1,7 +1,8 @@
 ﻿@using TangyLibrary.Models.LearnBlazorModels
-<div class="bg-gray-200 p-3">
+<div class="bg-gray-200 p-3" @onclick=" args => LastSelectedProductUpdate(args , Product.Name)">
     <h5 class="text-green-700">Product - @Product.Id</h5>
     <input type="checkbox" @onchange="FavouriteUpdate"/> - Add to favorite <br/>
+    
     Name - @Product.Name<br/>
     Price - @Product.Price<br/>
     Show - <input type="checkbox" @bind-value="@Product.IsActive" checked="@(Product.IsActive ? "checked" : null)"/> <br/>
@@ -28,6 +29,14 @@
     private async Task FavouriteUpdate(ChangeEventArgs e)
     {
         await onFavouriteUpdated.InvokeAsync((bool) e.Value);
+    }
+    
+    [Parameter]
+    public EventCallback<string> onLastSelectedProductUpdated { get; set; }
+    
+    private async Task LastSelectedProductUpdate(MouseEventArgs e , string name)
+    {
+        await onLastSelectedProductUpdated.InvokeAsync(name);
     }
 
 }
