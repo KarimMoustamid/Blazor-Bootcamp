@@ -5,27 +5,13 @@
 <div class="container grid grid-cols-2 gap-x-2 bg-blue-200 p-3">
     @foreach (var product in Products)
     {
-        <div class="bg-gray-200 p-3">
-            <h5 class="text-green-700">Product - @product.Id</h5>
-            Name - @product.Name<br />
-            Price - @product.Price<br />
-            Show - <input type="checkbox" @bind-value="@product.IsActive" checked="@(product.IsActive ? "checked" : null)"/> <br />
-           
-            @if (product.IsActive)
-            {
-               @foreach (var prodProp in product.ProductProperties)
-               {
-                   <p class="text-red-700">Key - @prodProp.Value</p>
-               }
-            }
-            <br/>
-           <_EditDeleteBtn IsActive="@product.IsActive"></_EditDeleteBtn> 
-        </div>
+        <_IndividualProduct Product="@product"></_IndividualProduct>
     }
 
 </div>
 
 @code {
+    
 
     List<Demo_Product> Products = new();
 

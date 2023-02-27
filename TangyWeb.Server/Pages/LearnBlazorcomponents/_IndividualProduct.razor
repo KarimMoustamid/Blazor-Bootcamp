@@ -1,0 +1,25 @@
+﻿@using TangyLibrary.Models.LearnBlazorModels
+<div class="bg-gray-200 p-3">
+    <h5 class="text-green-700">Product - @Product.Id</h5>
+    <input type="checkbox" /> - Add to favorite   <br/>
+    Name - @Product.Name<br/>
+    Price - @Product.Price<br/>
+    Show - <input type="checkbox" @bind-value="@Product.IsActive" checked="@(Product.IsActive ? "checked" : null)"/> <br/>
+
+    @if (Product.IsActive)
+    {
+        @foreach (var prodProp in Product.ProductProperties)
+        {
+            <p class="text-red-700">Key - @prodProp.Value</p>
+        }
+    }
+    <br/>
+    <_EditDeleteBtn IsActive="@Product.IsActive"></_EditDeleteBtn>
+</div>
+
+@code {
+
+    [Parameter]
+    public Demo_Product Product { get; set; }
+
+}
