@@ -2,10 +2,19 @@
 
 <h3 class="text-green-700">Parent</h3>
 
-<_Child Title="New Title"> Render Fragment From Parent A.K.A Children Props </_Child>
+<_Child  OnBtnClick="ShowMessage" Title="New Title"> Render Fragment From Parent A.K.A Children Props </_Child>
 
 <_Child Title=""></_Child>
 
+<p class="">@messageText</p>
+
 @code {
+
+    public string messageText = "";
+    
+    private void ShowMessage()
+    {
+        messageText = "Tangy Btn clicked from child Component";
+    }
     
 }
