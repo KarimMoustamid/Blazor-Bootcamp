@@ -4,21 +4,31 @@
     </div>
 
     <div>
-        @if (ChildContent != null)
+        @if (DangerChildContent != null)
         {
             <div>
-                <p class="text-lg text-blue-600">@ChildContent</p>
+                <p class="text-lg text-red-600">@DangerChildContent</p>
             </div>
         }
         else
         {
-            <div>
-                <p class="text-lg text-blue-600">No Child Content</p>
-            </div>
+            @if (ChildContent != null)
+            {
+                <div>
+                    <p class="text-lg text-blue-600">@ChildContent</p>
+                </div>
+            }
+            else
+            {
+                <div>
+                    <p class="text-lg text-blue-600">No Child Content</p>
+                </div>
+            }
         }
+
     </div>
-    
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" @onclick="OnBtnClick" >Btn Click</button>
+
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" @onclick="OnBtnClick">Btn Click</button>
 </div>
 
 @code {
@@ -30,6 +40,9 @@
     public RenderFragment ChildContent { get; set; }
 
     [Parameter]
+    public RenderFragment DangerChildContent { get; set; }
+
+    [Parameter]
     public EventCallback OnBtnClick { get; set; }
-    
+
 }
